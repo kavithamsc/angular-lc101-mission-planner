@@ -1,14 +1,6 @@
 <h3>Crew</h3>
 <ul>
-  <!-- <li *ngFor="let crewMember of crew">{{crewMember.name}}
-  <span *ngIf="crewMember.firstMission">- 1st</span></li> -->
-  <!-- <li *ngFor="let crewMember of crew">
-    {{crewMember.name}}
-    <span *ngIf="crewMember.firstMission">- 1st</span>
-    <button (click)="remove(crewMember)">remove</button>
- </li> -->
- 
-  <li *ngFor="let crewMember of crew">
+ <li *ngFor="let crewMember of crew">
 
      <span *ngIf="crewMemberBeingEdited !== crewMember; else elseBlock">
         <!-- display state of member -->
@@ -30,3 +22,5 @@
 <input #name type="text"/>
 <label>First mission<input #firstMission type="checkbox"/></label>
 <button (click)="add(name.value, firstMission.checked)">Add</button>
+              
+      
